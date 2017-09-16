@@ -4,7 +4,8 @@ This provides a few examples of how to use the SGI GRU ASIC.
 
 ## The SGI Global Reference Unit
 
-The SGI GRU is an ASIC that is part of the HARP2 ASIC which is built into certain servers of the SGI UltraViolet family (recently acquired by HPE). It is programmable via a proprietary API and provides operations to copy and process memory as well as atomic memory operations (AMOs).
+GRU stands for Global Reference Unit or in earlier versions Global Register Unit. 
+It is an ASIC that is part of the HARP2 ASIC which is built into certain servers of the SGI UltraViolet family (recently acquired by HPE). It is programmable via a proprietary API and provides operations to copy and process memory as well as atomic memory operations (AMOs). 
 
 More information on the GRU: https://www.sgi.com/pdfs/4551.pdf
 
