@@ -44,11 +44,11 @@ void *copy(void *arg)
 	// but a cb can handle more than one thread at once
 	cb = gru_get_cb_pointer(gseg, targs->thread_num % 16);
 
-	// get the pointer to the a cacheline of the data segment 
+	// get the pointer to the respective cacheline of the data segment 
 	// (DSR) of the gru context
 	dsr = gru_get_data_pointer(gseg, targs->thread_num);
 
-	// the atomic memory operation
+	// the atomic memory operation executed
 	gru_gamir(cb, EOP_IR_INC, targs->var, XTYPE_DW, 0);
 
 	// wait for the operation to finish
