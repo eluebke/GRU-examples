@@ -40,7 +40,8 @@ void *copy(void *arg)
 	}
 
 	// get a pointer to a control block 
-	// the modulo operation is because there are 16 cbs max in each gru context
+	// the modulo operation is because there are 16 cbs max in each gru context,
+	// but a cb can handle more than one thread at once
 	cb = gru_get_cb_pointer(gseg, targs->thread_num % 16);
 
 	// get the pointer to the a cacheline of the data segment 
