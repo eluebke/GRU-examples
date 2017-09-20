@@ -73,7 +73,7 @@ int main()
 
 	// prepare the GRU
 	gru_cookie_t cookie;
-	int cbrs = num_threads, maxthreads = num_threads, dsrbytes = 8 * 1024;
+	int cbrs = 16, maxthreads = num_threads, dsrbytes = 8 * 1024;
 
 	// create the main gru context
 	if (gru_create_context(&cookie, NULL, cbrs, dsrbytes, num_threads, GRU_OPT_MISS_DEFAULT) == -1) {
