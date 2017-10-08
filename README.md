@@ -15,3 +15,8 @@ What the GRU can do for you: http://www.adms-conf.org/2017/presentations/NUMA.pd
 
 For my master thesis I extensively tested the capabilities of the SGI GRU. Some of my results were used in the paper "Hardware-Accelerated Memory Operations for Large-Scale NUMA Systems", which was presented at the ADMS on September 1st 2017. 
 Since getting started with programming the GRU was pretty frustrating due to lack of documentation I wanted to provide a few basic code examples. I took code used for my thesis and trimmed it down.
+
+## How to use it
+
+The GRU library has to be installed on your system.
+Then a simple "gcc bcopy.c -lgru -o bcopy" should do it.
